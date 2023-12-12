@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title> About Us </title>
+    <link rel="stylesheet" href="text.css">
+    <script src="123.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .profile {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile h3 {
+            margin-top: 0;
+        }
+
+        .profile p {
+            margin-bottom: 0;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <nav>
+        <!-- You can include navigation links here if needed -->
+    </nav>
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+
+    <button onclick="myFunction()"> dark mode</button>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle('dark-mode');
+        }
+    </script>
+
+
+
+
+    <h1>Make car buying easy,
+        transparent and efficient for all</h1>
+    <br>
+
+    <h2>Team Members</h2>
+
+
+    <div class="container">
+        <div class="profile">
+            <img src="https://scontent.fcai19-6.fna.fbcdn.net/v/t39.30808-6/348437867_784614416672533_4279689892335371131_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHR_HKwmTFc4rhLIuI4gzTFfTIMDXt2BwN9MgwNe3YHA099KvPNDyotk801L5LIl55EcmuuvXXZd0J_edmoZJAG&_nc_ohc=5A_us26si10AX-V93kN&_nc_ht=scontent.fcai19-6.fna&oh=00_AfAE2ukTVN8Sdn6A1HU84C5ajaeu1TxCw9kPdKO2o0RJFg&oe=65799430"
+                alt="Profile Picture">
+            <h3>Belal Hesham</h3>
+            <p>........</p>
+        </div>
+        <div class="profile">
+            <img src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/345642719_1712562555900817_4133221569143342727_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=OdA1w2dUBFMAX_OLQ6U&_nc_ht=scontent-hbe1-1.xx&oh=00_AfATrvKJnmPIKspgQ5JA4KkhbgL2_HRLVxTuZiZLnwBhqg&oe=657A4349"
+                alt="Profile Picture">
+            <h3>Abdelrahman Mohamed</h3>
+            <p>......</p>
+        </div>
+        <div class="profile">
+            <img src="https://scontent.fcai19-6.fna.fbcdn.net/v/t39.30808-6/321283808_818586375874813_8271750246703906644_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeHqbA139b63eElZrAZOZ6v6m99ymjq-9eib33KaOr716AroEq5FtUlFOd86TmGkwSADhOFKONPLKnRYi8UWG8FW&_nc_ohc=JyOINmyC_l8AX80J8OY&_nc_ht=scontent.fcai19-6.fna&oh=00_AfBnp3whbbkskRrC8q9Dh044rcQOqEIfHR1qDDounZQElQ&oe=65788F80"
+                alt="Profile Picture">
+            <h3>Mohamed bassioni</h3>
+            <p>.....</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var profiles = [
+            {
+                name: "Mohamed Adel",
+                title: "........",
+                image: "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/408375982_2541585516003565_3316883431618213777_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/392824879_2541586219336828_417908158076333796_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=2N0gsyOa4bYAX-acX34&_nc_ht=scontent-lhr8-1.xx&oh=00_AfBaNkepnnXTtvU7Ke7UCXdgwdn18joCrCUOXQkgGugX3A&oe=6579224F&_nc_ohc=wLdI0gmR9jYAX9aZbgw&_nc_ht=scontent-lhr8-1.xx&oh=00_AfBjePR634JXWbU160JxomOnjADzeszNcU_hPSgzlU-eTw&oe=657A59D2"
+            },
+
+        ];
+
+
+        var container = document.querySelector(".container");
+
+        profiles.forEach(function (profile) {
+            var div = document.createElement("div");
+            div.classList.add("profile");
+            div.innerHTML = "<img src='" + profile.image + "' alt='Profile Picture'>" +
+                "<h3>" + profile.name + "</h3>" +
+                "<p>" + profile.title + "</p>";
+            container.appendChild(div);
+        });
+    </script>
+
+    <main>
+        <section>
+            <h2>Our Story</h2>
+            <p>Welcome to our company's "cars " page. Here, we'll share the story of our journey and how we came to
+                be.</p>
+            <!-- Add more content about your company's history here -->
+
+
+
+            <h2>Our Team</h2>
+            <p>Meet the people behind our company. Our dedicated team is committed to providing the best service to our
+                customers.</p>
+            <!-- Include information about key team members if desired -->
+        </section>
+    </main>
+
+    <div class="ss">
+        <h1>What We Do</h1>
+        <p>Welcome to our premier car selling website, where the road to your next automotive adventure begins. Whether
+            you're in the market to buy a vehicle or looking to sell your current one, our platform offers a seamless
+            and comprehensive experience for both buyers and sellers alike. We understand that buying or selling a car
+            is a significant decision, and we're here to make the process as convenient, transparent, and enjoyable as
+            possible.
+        </p>
+
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2023 Your Company Name</p>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
